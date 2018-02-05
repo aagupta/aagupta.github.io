@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="portfolio.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+<!-- Portfolio page -->
+
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="main.html">About Me</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+
+<div id="port">
+
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;  <b>My Portfolio</b></span>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <button id="button1" class="button">
+    <div class="content w3-hover-shadow w3-padding-64">
+      <img src="Images/Poster.jpg" alt="Colonoscopy" style="width:100%">
+      <a href="colonoscopyPg.html"></a>
+      <h3><center>Visual Data Analytics</center></h3>
+      <p><center>Algorithm development for efficient frame extraction from Colonoscopy videos.</center></p>
+      <p><i>MATLAB</i></p>
+    </div>
+  </button>
+  </div>
+  <div class="column">
+    <button id="button2" class="button">
+    <div class="content w3-hover-shadow w3-padding-64">
+      <img src="Images/turbofan.png" alt="Turbofans" style="width:100%">
+      <h3><center>Predictive Analytics</center></h3>
+      <p><center>Machine Failure Predictions of Turbofan Engines
+      </center></p>
+      <p><i><u>Algorithms:</u></i> Kohonen Nets, Support Vector Machines (SVM), Random Forest,
+      Decision Tree</p>
+      <pre></pre>
+      <p><i>R, Python, SPSS, Microsoft AzureML</i></p>
+    </div>
+  </button>
+  </div>
+  <div class="column">
+    <button id="button3" class="button">
+    <div class="content w3-hover-shadow w3-padding-64">
+      <img src="Images/ChanceIt Logo.png " alt="ChanceIt" style="width:100%">
+      <h3>ChanceIt</h3>
+      <p><i>You had me with your voice.</i></p>
+      <pre></pre>
+      <p><u><i>Tools Used for Development:</i></u>
+        Ionic, Firebase, Javascript, HTML, CSS</p>
+    </div>
+  </button>
+  </div>
+  <!-- <div class="column">
+    <div class="content">
+      <img src="mountains.jpg" alt="Mountains" style="width:100%">
+      <h3>My Work</h3>
+      <p>Lorem ipsum..</p>
+    </div>
+  </div> -->
+</div>
+</div>
+
+<!-- <div class="content">
+  <img src="bear.jpg" alt="Bear" style="width:100%">
+  <h3>Some Other Work</h3>
+  <p>Lorem ipsum..</p>
+</div> -->
+
+<!-- Sidebar navigation script  -->
+<script>
+function openNav()
+{
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("port").style.marginLeft = "250px";
+}
+
+function closeNav()
+{
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("port").style.marginLeft= "0";
+}
+</script>
+
+<!-- Card Button script-->
+<script type="text/javascript">
+  document.getElementById("button1").onclick = function () {
+    location.href = "colonoscopyPg.html"
+}
+</script>
+
+<script type="text/javascript">
+  document.getElementById("button2").onclick = function () {
+    location.href = "turbofan.html"
+}
+</script>
+</body>
+
+</html>

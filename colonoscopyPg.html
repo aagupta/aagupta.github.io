@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+  <!-- Sidebar Navigation  -->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="main.html">About Me</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+  <div id="sidebar">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+    <h1><center>Visual Data Analytics</center></h1>
+    <p>
+      With the advancement of technology across all industries and with the introduction
+      of multiple mediums of gathering data it has become extremely crucial to sort the
+      meaningful data from the noise.
+    </p>
+    <p>
+      When looking at the healthcare industry, another motivation for capturing the meaningful
+      data is a physician's time. With the amount of data that is being captured, whether it be
+      through wearable devices or through Electronic Health Records (EHRs), a physician does not
+      have time to look through the amount of data available, keep up with new research being done,
+      and meet with his/her patients.
+    </p>
+    <p>
+       Keeping this motivation in mind, I was introduced to a problem faced by a few Gastroenterologists
+       from Mayo Clinic in which they were spending hours analyzing Colonoscopy videos when in reality
+       they were only interested in some data starting from the Withdrawal Phase (WP) of the Colonoscopy.
+       In addition, it was found that even during the WP, there were only a few frames that the Gasteroenterologists
+       were interested in analyzing. This problem introduced the idea of "Effective" withdrawal time.
+
+     </p>
+     <p>
+       While collaborating with the Division of Gastroenterology and Hepatology and the Department of
+       Biomedical Informatics at Arizona State University, I was able to develop an algorithm for
+       extracting frames from colonoscopy videos so that the physicians can analyze groups of frames rather
+       than watching hours and hours of complete colonoscopies. This algorithm was developed using MATLAB.
+    </p>
+    <p>
+      This research was presented at the annual meeting of the American College of Gasteroenterology (ACG) in
+      October, 2016 and led to a publication and won an accolade of Presidential Poster Award.
+    </p>
+
+    <!-- <object width="400" height="400" data="Poster.PDF"></object> -->
+    <img src="Images/Poster.jpg" width="700" height="300">
+
+    <p>
+      H. Siddiki, F. C. Ramirez, M. Temkit, J. Liang, A. Gupta, S. Gurudu. <i>Not All Visual Data Acquired During Withdrawal Phase (WP) of Colonoscopy Is Interpretable: Introducing the Concept of <q>Effective</q> WP Time.</i> The 81st ACG Annual Meeting, October 14 - 19, 2016, Las Vegas, Nevada.
+    </p>
+  </div>
+
+  <!-- Sidebar navigation script  -->
+  <script>
+  function openNav()
+  {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("sidebar").style.marginLeft = "250px";
+  }
+
+  function closeNav()
+  {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("sidebar").style.marginLeft= "0";
+  }
+  </script>
+</body>
+
+</html>

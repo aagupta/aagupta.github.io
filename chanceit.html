@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="portfolio.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+</head>
+
+<body>
+  <!-- Sidebar Navigation  -->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="main.html">About Me</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+  <div id="sidebar">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+    <h1><center>
+      <img src="Images/ChanceIt Logo.png " alt="ChanceIt" style="width:50%">
+    </center></h1>
+    <p><center><i>
+      You had me with your voice.
+    </i></center></p>
+
+    <p>Advancement in technology has also become prevalent in the dating industry. In today's world
+      people are less likely to go to a local bar or meet people in the traditional way. Majority
+      of the people will be found using apps like Tinder, Bumble and other common dating apps.
+    </p>
+
+    <p>
+      According to some market reseach done by the Chance It team, we found that Tinder has about 25 million
+      users while Bumble has about 7 million users. So what is it that makes all of these apps so unique?
+      <pre></pre>
+      The differences between dating apps usually are found in the way they work and designed. Let's take Bumble for
+      an example. The way Bumble works is that the women initiate the contact. On the other hand, Tinder
+      is extremely popular because of the user-friendly interface and functionality.
+      <pre></pre>
+      Although these apps have their differences, they all boil down to one concept: <b>Superficiality</b>.
+    </p>
+
+    <p>
+      Chance It was born from the motivation of reducing superficiality. Eliminating it would be quite a stretch,
+      but reducing it was our main objective. Chance It is a dating app that will allow users to initially match
+      based on voice. Record your voice on your profile and then when matching others, get a snippet of their
+      personality based on their description and their voice.
+    </p>
+
+    <p>
+      A simple use case scenario along with screenshots of the app is shown below.
+    </p>
+
+    <p><u>Use Case:</u></p>
+    <!-- <object width="400" height="400" data="Poster.PDF"></object> -->
+    <img src="Images/ChanceItUseCase.png" width="400" height="100">
+
+    <p>Feel free to look through the slideshow to get an idea of what the app looks like!<p>
+
+    <!--Slide show code  -->
+  <div class="w3-content w3-display-container">
+    <img class="mySlides" src="Images/WelcomeScreen.png" style="width:100%">
+    <img class="mySlides" src="Images/LoginScreen.png" style="width:100%">
+    <img class="mySlides" src="Images/InstructionScreen.png" style="width:100%">
+    <img class="mySlides" src="Images/PersonalProfile.png" style="width:100%">
+    <img class="mySlides" src="Images/OtherProfile.png" style="width:100%">
+    <img class="mySlides" src="Images/SideNav.png" style="width:100%">
+  </div>
+
+  </div>
+
+  <!-- Sidebar navigation script  -->
+  <script>
+  function openNav()
+  {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("sidebar").style.marginLeft = "250px";
+  }
+
+  function closeNav()
+  {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("sidebar").style.marginLeft= "0";
+  }
+  </script>
+
+  <!-- Slide show script -->
+  <script>
+  var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+  </script>
+</body>
+
+</html>

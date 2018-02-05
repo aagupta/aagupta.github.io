@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+  <!-- Sidebar Navigation  -->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+  <div id="sidebar">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+    <h1><center>Predictive Data Analytics</center></h1>
+    <p> Machine Failure prediction is a concept that is catching the eyes of many different
+      companies. The benefits of predictive analytics in machine health management are numerous.
+      As an example, if a company working with engines were to use predictive analytics, they would
+      be able to save on the money that they spend in terms of labor and equipment. Knowing when a
+      machine is going to fail can help the company plan ahead as to when the machine should be replaced
+      or if there is a component of the machine that should be replaced rather than the whole machine being
+      replaced. In addition, implementing predictive analytics to machine health management helps improve strategic
+      planning because companies will be able to increase revenue, increase the efficienct of employee time among
+      many other benefits.
+    </p>
+    <p>
+      For this project, the dataset that was used was the <a href="https://ti.arc.nasa.gov/tech/dash/groups/pcoe/prognostic-data-repository/">Turbofan Engine Degradation Simulation Dataset</a>
+      available through NASA. The authors used the C-MAPSS tool coded in MATLAB and Simulink to simulate a
+      large commercial turbofan engine at different flight conditions and power modes to generate different
+      sets of trainig and testing data.
+    </p>
+    <p>
+      The objective of this project was to use different clustering and classification algorithms to identify the
+      onset of the machines. Some algothims that were used include: Kohonen Nets, Support Vector Machines, Decision Trees,
+      and Random Forest. In addition, Dimensionality Reduction was used in order to improve the accuracy of the results.
+    </p>
+
+
+    <p>
+      <i><u>Citation for Dataset:</u></i>
+      <pre></pre>
+      A. Saxena and K. Goebel (2008). "Turbofan Engine Degradation Simulation Data Set", NASA Ames Prognostics Data Repository (http://ti.arc.nasa.gov/project/prognostic-data-repository), NASA Ames Research Center, Moffett Field, CA
+    </p>
+    <p>
+      <i><u>Tools Used In Project:</u></i>
+      <pre></pre>
+      <img src="Images/turbofanTools.png" width="500" height="300">
+    </p>
+  </div>
+
+  <!-- Sidebar navigation script  -->
+  <script>
+  function openNav()
+  {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("sidebar").style.marginLeft = "250px";
+  }
+
+  function closeNav()
+  {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("sidebar").style.marginLeft= "0";
+  }
+  </script>
+</body>
+
+</html>
