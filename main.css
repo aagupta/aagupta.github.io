@@ -12,12 +12,12 @@
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 22px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
 }
 
 .sidenav a:hover {
@@ -25,11 +25,11 @@
 }
 
 .sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 22px;
-  margin-left: 50px;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
 button {
@@ -46,7 +46,7 @@ button {
   padding: 16px;
 }
 
-@@media screen and (max-height: 450px) {
+@media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 
@@ -105,4 +105,15 @@ button2:hover, a2:hover {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
 }
