@@ -66,9 +66,8 @@ button {
   font-size: 18px;
 }
 
-p.serif {
-  font-family: 'Tangerine';
-  font-size: large;
+.w3-lobster {
+    font-family: "Lobster", serif;
 }
 
 button2 {
