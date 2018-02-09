@@ -90,9 +90,10 @@ a2 {
   color: #818181;
 }
 
-p {
+p2 {
   font-size: 20px;
   color: #818181;
+  padding: 70px;
 }
 
 button2:hover, a:hover {
