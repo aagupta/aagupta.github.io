@@ -42,8 +42,8 @@ button {
 }
 
 #main {
-  transition: margin-left .5s;
-  padding: 16px;
+    transition: margin-left .5s;
+    padding: 20px;
 }
 
 @media screen and (max-height: 450px) {
@@ -86,11 +86,16 @@ button2 {
 
 a2 {
   text-decoration: none;
-  font-size: 40px;
+  font-size: 20px;
   color: #818181;
 }
 
-button2:hover, a2:hover {
+p {
+  font-size: 20px;
+  color: #818181;
+}
+
+button2:hover, a:hover {
   opacity: 0.7;
 }
 
