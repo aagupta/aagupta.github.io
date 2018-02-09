@@ -98,5 +98,9 @@ button2:hover, a2:hover {
 .bgimg {
     background-image: url('Images/tempeTownLake.jpg');
     min-height: 70%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
