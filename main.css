@@ -96,7 +96,7 @@ p2 {
 }
 
 button2:hover, a:hover {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 /* First image (Logo. Full height) */
@@ -116,7 +116,7 @@ button2:hover, a:hover {
   position: fixed;
   top: 0;
   left: 0;
-  opacity: 0.8;
+  opacity: 0.9;
 
   /* Preserve aspet ratio */
   min-width: 100%;
