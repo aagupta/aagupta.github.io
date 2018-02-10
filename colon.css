@@ -1,15 +1,13 @@
 .format {
-  padding: 20px;
   float: left;
-  text-align: left;
 }
 
 /*Eliminates padding, centers the thumbnail */
 
 body, html {
-  padding: 0;
+  padding: 10px;
   margin: 0;
-  text-align: center;
+  text-align: left;
 }
 
 /* Styles the thumbnail */
