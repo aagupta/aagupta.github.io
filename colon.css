@@ -1,5 +1,7 @@
 .format {
   padding: 20px;
+  float: left;
+  text-align: left;
 }
 
 /*Eliminates padding, centers the thumbnail */
