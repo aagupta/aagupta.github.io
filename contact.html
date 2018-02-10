@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- link to main stylesheet -->
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="lib/typed.js" type="text/javascript"></script>
+</head>
+<body>
+  <div id="newSideNav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="card">
+      <img src="Images/Prof.png" alt="Me" style="width:100%">
+      <p class="text"><center>Aakriti Gupta</center>
+        <center>Arizona State University</center>
+        <pre></pre>
+        <a href="main.html">About Me</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="#">Resume</a>
+        <a href="contact.html">Contact Me</a>
+        <pre></pre>
+        <center>Connect with me!</center>
+        <div class="center">
+          <a href="https://www.linkedin.com/in/aakriti-gupta/" ><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+        </div>
+      </p>
+    </div>
+  </div>
+
+  <div id="port">
+    <a class="w3-bar-item w3-button" onclick="openNav()" style="font-size:30px;cursor:pointer">&#9776;</a>
+  </div>
+
+  <div class="w3-content w3-padding-64" id="contact">
+    <h3 class="w3-center">WHERE AM I LOCATED</h3>
+    <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+    <div class="w3-row w3-section">
+      <div class="w3-col m4 w3-container">
+        <!-- Add Google Maps -->
+        <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
+      </div>
+      <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chandler, Arizona, US<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: (480)-309-9775<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: aakritigupta.us@gmail.com<br>
+      </div>
+      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<script>
+function myMap()
+{
+  //
+  myCenter=new google.maps.LatLng(33.331699, -111.849431);
+  var mapOptions= {
+    center:myCenter,
+    zoom: 9, scrollwheel: false, draggable: true,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+</script>
+
+<!-- Google API Script -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArEnuQ_HZzAGvtipqK30oRhbzMVWA53aY&callback=myMap"></script>
+
+
+<script>
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+function openNav() {
+  document.getElementById("newSideNav").style.width = "250px";
+  document.getElementById("new").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+function closeNav() {
+  document.getElementById("newSideNav").style.width = "0";
+  document.getElementById("new").style.marginLeft = "0";
+  document.body.style.backgroundColor = "white";
+}
+</script>
+</body>
+</html>
