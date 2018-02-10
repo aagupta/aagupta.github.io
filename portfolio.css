@@ -21,6 +21,7 @@ h1 {
 
 .row {
     margin: 8px -16px;
+    display: flex;
 }
 
 /* Add padding BETWEEN each column (if you want) */
@@ -33,11 +34,12 @@ h1 {
 .column {
     float: left;
     width: 25%;
+    flex: 1;
 }
 
 /* Clear floats after rows */
 .row:after {
-    content: "";
+    content: " ";
     display: table;
     clear: both;
 }
@@ -56,8 +58,9 @@ h1 {
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .column {
+        display: block;
         width: 100%;
     }
 }
