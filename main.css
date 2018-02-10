@@ -54,13 +54,17 @@ button {
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
   margin: auto;
   text-align: center;
   font-family: 'times', serif;
   font-size: 20px;
   color: #818181;
+}
+
+.text {
+  font-family: 'times', serif;
+  font-size: 20px;
 }
 
 .title {
@@ -123,4 +127,10 @@ button2:hover, a:hover {
   /* Preserve aspet ratio */
   min-width: 100%;
   min-height: 100%;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
