@@ -7,8 +7,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="lib/typed.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
   <div id="newSideNav" class="sidenav">
@@ -34,7 +37,8 @@
   </div>
   <a class="w3-bar-item w3-button" onclick="openNav()" style="font-size:30px;cursor:pointer">&#9776;</a>
   <h2><center>Welcome to My Portfolio!</center></h2>
-  <p><center>Feel free to click on the projects below for more information.</center></p>
+  <p><center>Feel free to click on the projects below for more information or
+  visit the Github Repo/Notebook to see the project.</center></p>
   <div class="col-container">
     <div class="col">
       <button id="button1" class="button">
@@ -57,7 +61,6 @@
           </center></p>
           <p><i><u>Algorithms:</u></i> Kohonen Nets, Support Vector Machines (SVM), Random Forest,
             Decision Tree</p>
-            <pre></pre>
           <p><i>R, Python, SPSS, Microsoft AzureML</i></p>
         </div>
       </button>
@@ -69,13 +72,27 @@
           <a href="chanceit.html"></a>
           <h3>ChanceIt</h3>
           <p><i>You had me with your voice.</i></p>
-          <pre></pre>
           <p><u><i>Tools Used for Development:</i></u>
             Ionic, Firebase, Javascript, HTML, CSS</p>
         </div>
       </button>
     </div>
   </div>
+  <div class="container">
+    <h2>Additional Projects</h2>
+    <ul class="list-group">
+      <li class="list-group-item">
+        <div class="d-flex w-100 justify-content-between">
+            <h4>User-Based Filtering Recommendation System &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://github.com/aagupta/UBFRecommendationSystem">Github Repo</a>
+          </h4>
+        </div>
+        <p>Recommendation system built on the data in which 8 users have rated 8 different albums.</p>
+        <p class="list-group-skills"><u><i>Skills/Concepts Applied:</u></i> K-Nearest-Neighbor, Pearson Correlation, Similarity Measures</p>
+      </li>
+    </ul>
+  </div>
+
   <center><h3>More Projects Coming Soon!</h3></center>
   <!-- Side navigation script -->
   <script>
